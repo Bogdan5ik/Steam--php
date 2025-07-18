@@ -6,6 +6,12 @@
 		html, body{
 			height: 100%;
 		}
+		.yes{
+			color: red;
+		}
+		.no{
+			color: green;
+		}
 	</style>
 	<!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -34,15 +40,22 @@
 				<img src="profile.jfif" alt="">
 			</div>
 			<div class="col-5" style="color: white;">
-				<h1>Имя</h1>
-				<p>электронная почта:</p>
-				<p>Возраст:</p>
-				<p>Ограничений нет</p>
+				<h1><?php echo $_GET['name']?></h1>
+				<p>электронная почта: <?php echo $_GET['email']?></p>
+				<p>Возраст: <?php echo $_GET['age']?></p>
+				<p><?php
+				       if($_GET['age'] < 18){
+						echo "<p class='yes'>ограничения есть</p>";
+					   } else{
+						echo "<p class='no'>ограничений нету</p>";
+					   }
+				?></p>
 			</div>
 			<div class="col-4" style="color: white;">
 				<h1>Уровень 1</h1>
 				<p>Вы можете отобразить один из ваших значков здесь. Выберите его на странице редактирования профиля.</p>
-				<button style="background-color: black; color: white; border: 1px solid white; border-radius: 5px; height: 2rem; width: 13rem;">Редактировать Профиль</button>
+				<button style="background-color: black; color: white; border: 1px solid white; border-radius: 5px; height: 2rem; width: 13rem;">
+					<a href="edit.php" style="text-decoration: none; color: white;">Редактировать Профиль</a></button>
 			</div>
 	</div>
 
