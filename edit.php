@@ -56,9 +56,7 @@
 			<input type="number" name="age1" class="form-control bg-dark" style="color: white; width: 23rem;">
         </div>
 
-        <button type="submit" class="btn-primary" style="border-radius: 5px; height: 3rem; width: 6rem;">
-					<a href="profile.php" style="text-decoration: none; color: white;">Сохранить</a>
-        </button>
+        <button type="submit" class="btn-primary" style="border-radius: 5px; height: 3rem; width: 6rem;">Сохранить</button>
 
         </form>
             

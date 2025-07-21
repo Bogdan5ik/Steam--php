@@ -47,7 +47,7 @@
 					<p class="text-white m-0  mt-5">Введите пароль</p>
 					<input type="password" name="password" class="w-25 form-control bg-dark" style="color: white;">
 
-					<button type="submit" class="btn  btn-primary mt-4"><a href="profile.php" style="color: white; text-decoration: none;">Готово</a></button>
+					<button type="submit" class="btn  btn-primary mt-4">Готово</button>
 
 				</form>
 
