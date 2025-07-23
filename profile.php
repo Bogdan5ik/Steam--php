@@ -39,9 +39,9 @@
 				<img src="profile.jfif" alt="">
 			</div>
 			<div class="col-5" style="color: white;">
-				<h1><?php echo $_GET['name']?></h1>
-				<p>электронная почта: <?php echo $_GET['email']?></p>
-				<p>Возраст: <?php echo $_GET['age']?></p>
+				<h1><?php echo $_GET['name']?><?php echo $_GET['name1']?></h1>
+				<p>электронная почта: <?php echo $_GET['email']?><?php echo $_GET['email1']?></p>
+				<p>Возраст: <?php echo $_GET['age']?><?php echo $_GET['age1']?></p>
 				<p><?php
 				       if($_GET['age'] < 18){
 						echo "<p class='yes'>ограничения есть</p>";
